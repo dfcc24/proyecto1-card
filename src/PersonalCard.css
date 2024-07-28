@@ -1,0 +1,73 @@
+@keyframes colorChange {
+  0% { background-color: #ff9a9e; }
+  25% { background-color: #fad0c4; }
+  50% { background-color: #fad0c4; }
+  75% { background-color: #ffecd2; }
+  100% { background-color: #ff9a9e; }
+}
+
+.personal-card {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  animation: colorChange 10s infinite alternate;
+  transition: transform 0.2s;
+}
+
+.personal-card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-info {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.custom-button {
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  background-color: #ff69b4; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  width: 115px;
+    transition: background-color 0.3s; /* Efecto de transición al pasar el cursor */
+}
+
+.custom-button:hover {
+  background-color: #ff1493; /* Color de fondo al pasar el cursor por encima */
+}
+
+.button-container {
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  width: 100%; /* Asegura que el contenedor del botón ocupe todo el ancho del card */
+  margin-top: 20px; /* Margen superior para separación */
+}
