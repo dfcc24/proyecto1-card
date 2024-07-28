@@ -1,8 +1,8 @@
 @keyframes colorChange {
-  0% { background-color: #ff9a9e; }
-  25% { background-color: #fad0c4; }
-  50% { background-color: #fad0c4; }
-  75% { background-color: #ffecd2; }
+  0% { background-color: #65e22b; }
+  25% { background-color: #8ecdf1; }
+  50% { background-color: #15aedd; }
+  75% { background-color: #f1e9f1; }
   100% { background-color: #ff9a9e; }
 }
 
